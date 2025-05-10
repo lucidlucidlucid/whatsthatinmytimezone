@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's That In My Timezone?</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="glass-panel">
+            <h1>What's That In My Timezone?</h1>
+            
+            <div class="input-section">
+                <div class="input-container">
+                    <input type="text" id="time-input" placeholder="Type any time (e.g. 7 pm ET, 3:30 Pacific Standard Time)">
+                    <div class="input-blur"></div>
+                </div>
+                <button id="convert-btn">Convert</button>
+            </div>
+            
+            <div class="result-container">
+                <div class="result-box">
+                    <div class="result-animation">
+                        <div class="result-content" id="result-display">
+                            Your time will appear here
+                        </div>
+                    </div>
+                </div>
+                <div class="detected-timezone">
+                    <span>Your timezone: </span>
+                    <span id="local-timezone">Detecting...</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="animated-background">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html> 
